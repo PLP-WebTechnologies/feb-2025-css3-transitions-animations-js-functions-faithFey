@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poultry Keeping Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Poultry Keeping Guide 🐔</h1>
+   <h2>Pick Your Favorite Poultry Type:</h2>
+  <div class="poultry-container">
+    <div class="card" onclick="setFavorite('chickens')">
+      <img src="images/Hens.jpg" alt="Chickens">
+      <h3>Chickens</h3>
+      <p>Chickens are the most common poultry birds. They are raised for both meat and eggs.</p>
+    </div>
+    <div class="card" onclick="setFavorite('ducks')">
+      <img src="images/Ducks.jpg" alt="Ducks">
+      <h3>Ducks</h3>
+      <p>Ducks are hardy and thrive in wet areas. They lay eggs and produce flavorful meat.</p>
+    </div>
+    <div class="card" onclick="setFavorite('turkeys')">
+      <img src="images/Turkey.jpg" alt="Turkey">
+      <h3>Turkeys</h3>
+      <p>Turkeys are mainly raised for meat and require more space to roam.</p>
+    </div>
+  </div>
+
+  <h2>Your Favorite Poultry Type: <span id="favorite"></span></h2>
+
+  <div id="animateBox"></div>
+
+  <label for="colorPicker">Pick Box Color:</label>
+  <input type="color" id="colorPicker">
+  <button onclick="triggerAnimation()">Animate</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
